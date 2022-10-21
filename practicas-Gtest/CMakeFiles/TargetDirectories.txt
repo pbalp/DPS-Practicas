@@ -1,0 +1,3 @@
+/home/pbalp/lab2-unit-tests-pbalp/CMakeFiles/runTests.dir
+/home/pbalp/lab2-unit-tests-pbalp/CMakeFiles/edit_cache.dir
+/home/pbalp/lab2-unit-tests-pbalp/CMakeFiles/rebuild_cache.dir
