@@ -8,15 +8,27 @@ unsigned long long int factorial(unsigned int i) {
 }
 
 int main(int argc, char *argv[]) {
-    int i=12, j=3, f=0;
+    /* 
+     * DCL04-C: Se declaran tres variables en la misma línea de código, lo que puede dar lugar a confusiones
+     * Solución: Declarar cada variable en una línea
+     * int i=12, j=3, f=0;
+    */
+    int i=12;
+    int j=3;
+    int f=0;
 
     if(argc==1) {
-        printf("Factorial of %d is %11d\n", i, factorial(i));
+        printf("Factorial of %d is %lld\n", i, factorial(i));
     }
     else {
-        j = atoi(argv[1]);
+        /*
+         * MSC24-C: Se usa la función deprecada atoi()
+         * Solución: Usar la función strtol
+         * j = atoi(argv[1]);
+        */
+        j = strtol(argv[1]);
         for(f=0;f<j;f++) {
-            printf("Factorial of %d id %11d\n", f, factorial(f));
+            printf("Factorial of %d id %lld\n", f, factorial(f));
         }
     }
 }
